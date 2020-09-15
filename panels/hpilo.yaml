@@ -1,0 +1,17 @@
+
+id: hp-ilo-panel
+
+info:
+  name: HP ilo panel
+  author: segfolt
+  severity: info
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    matchers:
+      - type: word
+        words:
+          - "ILO.js"
+        part: body
